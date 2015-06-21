@@ -4,25 +4,48 @@
 
 	<head> 
 
+
+		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="SingleSimplePage.css">
+
+
+		<!-- JQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 	</head>
 
 	<body>
 
-		<h1>Hello, HTML</h1>
+		<div class="container">
 
-		<div class="green">
-			What's Not Up?
-		</div>
+			<h1>Tennis Players</h1>
 
 
-		<div class="blue">
-			What's Not Up?
-		</div>
+	        <div class="imgContainer" id="imgContainer">
+				<img src="img/Federer.jpg">
+				<img src="img/Nadal.jpg"><br><br>
+				<img src="img/Djokovic.jpg">
+				<img src="img/Murray.jpg"><br><br>
+				<img src="img/Albert.jpg"><br><br>
+		    </div><!--end imgContainer -->
 
 
 
+		    <a id="showHideBtn" href="#" onclick="showHide(imgContainer)"> SHOW IMAGES</a>
+
+
+		</div><!-- end container -->
 	 </body>
 
 </html>
+
+<script>
+var imgContainer = document.getElementById('imgContainer');
+var showHideBtn = document.getElementById('showHideBtn');
+function showHide(element){
+	//alert("You Clicked Me, So Now You'll Go To The Top (AND THE PICTURE MIGHT APPEAR OR DISAPPEAR)!!!!");
+	$('#'+element.id).fadeToggle();
+	showHideBtn.style.display = "none";
+}
+
+</script>

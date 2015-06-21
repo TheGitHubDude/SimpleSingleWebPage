@@ -2,15 +2,32 @@
 
  body{
 
- 	color: pink;
+
+ 	background-color:black;
+ 	color: white;
 
  }
 
 
- .blue{
+ .container{
+ 	text-align: center;
  	color:blue;
+ 	background-color:gray;
+ 	width: 58%;
+ 	height: auto;
+
+ 	margin: 5% auto 0 auto;
  }
 
- .green{
- 	color:green;
- }
+.imgContainer{
+
+	color: red;
+
+	display: none;
+
+}
+
+.imgcontainer img{
+
+	width: 320px;
+}
